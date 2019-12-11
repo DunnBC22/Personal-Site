@@ -1,13 +1,235 @@
-body {
+/* Reset CSS */
+* {
   margin: 0;
+  padding: 0;
+}
+
+footer,
+header,
+section {
+  display: block;
+}
+
+body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-size: 24px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+/* CSS that impact the whole site (or multiple pages) */
+h1,
+h3,
+h5,
+p {
+  text-align: center;
+}
+
+h1 {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  padding-top: 10px;
+}
+
+.app {
+  background-image: url("./background.jpg");
+}
+
+.app-content {
+  margin-right: 18%;
+  margin-left: 18%;
+  background: lightblue;
+  padding: 24px;
+  max-width: 1000;
+  font-size: 18px;
+}
+
+.header {
+  background-color: blue;
+  margin-bottom: 5%;
+  height: 10vh;
+  max-height: 10%;
+}
+
+.app-logo {
+  height: 10vh;
+}
+
+.app-body {
+  min-height: 75vh;
+}
+
+.header ul {
+  list-style: none;
+}
+
+.header .nav-bar {
+  text-align: center;
+}
+
+.header .nav-bar li {
+  display: inline;
+  padding-left: 0.4em;
+  padding-right: 0.4em;
+  text-decoration-line: none;
+  font-size: 22px;
+  border: 1px solid black;
+  background-color: whitesmoke;
+}
+
+.header .nav-bar a {
+  color: darkblue;
+  text-decoration-line: none;
+}
+
+.header .HomeLogo {
+  float: left;
+}
+
+.footer {
+  background-color: blue;
+  margin-top: 5%;
+  font-size: calc(4px + 2vmin);
+  padding: 5px;
+}
+
+.footer a {
+  color: black;
+}
+
+.footer-right {
+  float: right;
+}
+
+/* Contact Me and Contact Me Form Components */
+
+.Contact-me-form fieldset {
+  border-color: blue;
+  color: blue;
+}
+
+.cmf-label {
+  float: left;
+  width: 38%;
+  text-align: right;
+  margin: 3px;
+  font-size: calc(4px + 1.5vw);
+}
+
+.cmf-input {
+  float: left;
+  margin: 3px;
+  width: 30%;
+  font-size: calc(4px + 1.5vw);
+}
+
+.errorMessage {
+  color: red;
+  font-size: calc(1px + 2vmin);
+  margin-bottom: 3%;
+  width: 32%;
+}
+
+.submit-button {
+  color: white;
+  background-color: darkblue;
+  font-size: 24px;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 18px;
+}
+
+.center-submit {
+  text-align: center;
+}
+
+.linkedin-logo {
+  width: 200px;
+  height: auto;
+}
+
+/* My Skills Component CSS */
+
+.skill-list {
+  list-style: none;
+  text-align: center;
+  width: 33.3%;
+  display: inline-block;
+  font-size: 18px;
+}
+
+/* About Me component CSS */
+
+img.about-me-picture {
+  width: 250px;
+  height: 250px;
+  display: block;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 925px) {
+  /* Start of the tablets */
+
+  .app-content {
+    margin-right: 12%;
+    margin-left: 12%;
+  }
+
+  .app-body {
+    min-height: 80vh;
+  }
+
+  .skill-list {
+    width: 50%;
+  }
+
+  .header .nav-bar li {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* Start of the Cell phone styles */
+  .app-content {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .App-body {
+    min-height: 70vh;
+  }
+  .header {
+    margin-bottom: 10%;
+  }
+
+  .header .nav-bar li {
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+    font-size: 13.75px;
+  }
+
+  .header .nav-bar a {
+    color: darkblue;
+  }
+
+  .skill-list {
+    width: 100%;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 325px) {
+  /* For the really small cell phone screens */
+  .header .nav-bar li {
+    font-size: 12px;
+  }
+
+  h1 {
+    margin-top: 8px;
+    margin-bottom: 2px;
+    font-size: 42px;
+  }
 }
