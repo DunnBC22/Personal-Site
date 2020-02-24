@@ -31,7 +31,9 @@ class MySkills extends Component {
         { id: 18, name: "Linux CLI" },
         { id: 19, name: "C#" },
         { id: 20, name: "ASP.NET" },
-        { id: 21, name: "Visual Basic" }
+        { id: 21, name: "Visual Basic" },
+        { id: 22, name: "ReactJS" },
+        { id: 23, name: "Project Management" }
       ]
     };
   }

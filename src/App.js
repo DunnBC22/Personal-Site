@@ -11,9 +11,10 @@ import ContactMe from "./Components/ContactMe";
 import FuturePlans from "./Components/FuturePlans";
 import MySkills from "./Components/MySkills";
 import Home from "./Components/Home";
+import QuoteOfTheDay from "./Components/QuoteOfTheDay";
+
 import logo from "./BaseLogo.png";
 
-//make sure to just use the BD logo as the Home link
 class App extends React.Component {
   render() {
     return (
@@ -24,9 +25,14 @@ class App extends React.Component {
               <div className="header">
                 <ul>
                   <li>
-                    <NavLink to="/">
-                      <img src={logo} className="app-logo" alt="BD Logo" />
-                    </NavLink>
+                    <div id="header-bar">
+                      <NavLink to="/">
+                        <img src={logo} className="app-logo" alt="BD Logo" />
+                      </NavLink>
+                      <div id="header-name">
+                        <h1>Brian Dunn</h1>
+                      </div>
+                    </div>
                   </li>
                   <div className="nav-bar">
                     <li>
@@ -54,6 +60,9 @@ class App extends React.Component {
               </Switch>
             </div>
           </Router>
+
+          <QuoteOfTheDay />
+
           <Footer />
         </div>
       </div>
