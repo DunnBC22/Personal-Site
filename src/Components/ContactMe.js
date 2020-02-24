@@ -4,6 +4,7 @@ Logo leading to my LinkedIn profile. */
 import React from "react";
 import ContactMeForm from "./ContactMeForm";
 import linkedinlogo from "../LI-Logo.png";
+import githublogo from "../GitHubLogo.png";
 
 class ContactMe extends React.Component {
   render() {
@@ -15,15 +16,21 @@ class ContactMe extends React.Component {
           If you would like to learn more about me and what I can do for your
           company, please contact me:
         </p>
+        <br />
         <ContactMeForm />
         <br />
-        <a className="linkedin-logo" href="http://linkedin.com/in/DunnBC22">
-          <img
-            src={linkedinlogo}
-            alt="LinkedIn Logo"
-            className="linkedin-logo"
-          />
-        </a>
+        <div id="logos">
+          <a href="http://linkedin.com/in/DunnBC22">
+            <img src={linkedinlogo} alt="LinkedIn Logo" className="logo" />
+          </a>
+          <a href="https://www.github.com/DunnBC22">
+            <img
+              className="logo right-align"
+              src={githublogo}
+              alt="Link to my GitHub"
+            />
+          </a>
+        </div>
       </div>
     );
   }

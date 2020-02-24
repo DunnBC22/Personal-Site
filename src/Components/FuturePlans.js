@@ -16,13 +16,13 @@ class FuturePlans extends Component {
           id: 1,
           heading: "Career Aspirations",
           para:
-            "I am seeking an entry level software developer role with a bold and forward looking company. Additionally, I am looking to become the subject matter expert in my career field."
+            "I am seeking an entry level software developer role. Additionally, I am looking to become the subject matter expert in my career field."
         },
         {
           id: 2,
           heading: "Personal Plans",
           para:
-            "Outside of work, I want to start volunteering and continue traveling and experiencing concerts. One cause that is near and dear to my heart is behavioral and mental health awareness. It would be nice to become more involved in that cause."
+            "Outside of work, I want to start volunteering, continue traveling as well as experiencing concerts. One cause that is near and dear to my heart is behavioral and mental health awareness. It would be nice to become more involved in that cause."
         }
       ]
     };

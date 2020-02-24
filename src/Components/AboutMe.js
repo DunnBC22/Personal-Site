@@ -1,4 +1,5 @@
-/* This page talks about the non-technical side of me */
+/* This page talks about the non-technical side of me
+as well as this website */
 
 import React, { Component } from "react";
 import myPicture from "../LinkedInPic.jpg";
@@ -19,7 +20,7 @@ class AboutMe extends Component {
           id: 1,
           header: "This Website",
           para:
-            "I created this site to expand my knowledge of ReactJS and other relevant technologies as well as to have fun!"
+            "I created this site to expand my knowledge of ReactJS and other relevant technologies as well as to have fun! In addition to ReactJS, this site utilizes React Router, Material UI, and JavaScript (ES6)."
         }
       ]
     };

@@ -13,14 +13,12 @@ class Footer extends Component {
   render() {
     return (
       <div className="footer">
-        <label>Email: </label>
         <a
           href={`mailto:${this.state.contactEmail}?subject='${this.state.emailSubject}'`}
         >
           {this.state.contactEmail}
         </a>
         <div className="footer-right">
-          <label>Phone #: </label>
           <a href={`tel:${this.state.contactPhoneNumber}`}>
             {this.state.contactPhoneNumber}
           </a>
