@@ -38,65 +38,62 @@ h1 {
 .app-content {
   margin-right: 18%;
   margin-left: 18%;
-  background: lightblue;
   padding: 24px;
+  background-image: radial-gradient(white, lightblue);
   max-width: 1000;
   font-size: 18px;
+  border-radius: 15px;
+  border: 2px darkblue solid;
 }
 
 .header {
   background-color: blue;
   margin-bottom: 5%;
   height: 10vh;
-  max-height: 10%;
-  border-radius: 10px;
+  border-radius: 15px;
+  border: 1px darkblue solid;
 }
 
 .app-logo {
   height: 10vh;
 }
 
-/* .app-body {
-  min-height: 53vh;
-} */
-
 .header ul {
   list-style: none;
 }
 
-.header .nav-bar {
+.header .nav {
   text-align: center;
   margin-top: 4px;
 }
 
-.header .nav-bar li {
+.header .nav li {
   display: inline;
   padding-left: 0.4em;
   padding-right: 0.4em;
-  text-decoration-line: none;
   font-size: 22px;
-  border: 1px solid rgb(41, 21, 21);
+  border: 1px solid darkblue;
   background-color: whitesmoke;
   border-radius: 15px;
   box-shadow: 0px 3px 3px darkblue;
   margin-left: 5px;
 }
 
-.header .nav-bar a {
+.header .nav a {
   color: darkblue;
   text-decoration-line: none;
 }
 
-.header .nav-bar li:hover {
+.header .nav li:hover {
   background-color: turquoise;
 }
 
-.header .nav-bar li:active {
+.header .nav li:active {
   background-color: darkblue;
-  box-shadow: 0px 0px 0px darkblue;
+  box-shadow: 0px 0px 0px;
 }
 
-.header .nav-bar a:active {
+.header .nav a:active {
   color: white;
 }
 
@@ -233,7 +230,7 @@ img.about-me-picture {
     width: 50%;
   }
 
-  .header .nav-bar li {
+  .header .nav li {
     font-size: 18px;
   }
 
@@ -249,15 +246,13 @@ img.about-me-picture {
   .app-content {
     margin-right: 0;
     margin-left: 0;
+    border-radius: 0px;
+    border: none;
   }
 
   #logos img {
     width: 150px;
   }
-
-  /*  .App-body {
-    min-height: 80vh;
-  } */
 
   .header #header-name {
     margin-right: 5%;
@@ -267,19 +262,18 @@ img.about-me-picture {
     margin-bottom: 10%;
   }
 
-  .header .nav-bar li {
+  .header .nav li {
     padding-left: 0.2em;
     padding-right: 0.2em;
     font-size: 13.75px;
   }
 
-  .header .nav-bar a {
+  .header .nav a {
     color: darkblue;
   }
 
   .skill-list {
     width: 100%;
-    font-size: 14px;
     padding: 0;
     margin: 0;
   }
@@ -294,7 +288,7 @@ img.about-me-picture {
 }
 @media screen and (max-width: 350px) {
   /* For the really small cell phone screens */
-  .header .nav-bar li {
+  .header .nav li {
     font-size: 12px;
     margin-left: 1px;
   }

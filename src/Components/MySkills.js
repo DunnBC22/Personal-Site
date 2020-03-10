@@ -33,7 +33,10 @@ class MySkills extends Component {
         { id: 20, name: "ASP.NET" },
         { id: 21, name: "Visual Basic" },
         { id: 22, name: "ReactJS" },
-        { id: 23, name: "Project Management" }
+        { id: 23, name: "Project Management" },
+        { id: 24, name: "Angular" },
+        { id: 25, name: "TypeScript" },
+        { id: 26, name: "GitHub" }
       ]
     };
   }

@@ -12,6 +12,7 @@ import FuturePlans from "./Components/FuturePlans";
 import MySkills from "./Components/MySkills";
 import Home from "./Components/Home";
 import QuoteOfTheDay from "./Components/QuoteOfTheDay";
+import { Animated } from "react-animated-css";
 
 import logo from "./BaseLogo.png";
 
@@ -25,16 +26,26 @@ class App extends React.Component {
               <div className="header">
                 <ul>
                   <li>
-                    <div id="header-bar">
-                      <NavLink to="/">
-                        <img src={logo} className="app-logo" alt="BD Logo" />
-                      </NavLink>
-                      <div id="header-name">
-                        <h1>Brian Dunn</h1>
+                    <Animated
+                      animationIn="zoomIn"
+                      animateOut="zoomOut"
+                      animationInDelay={250}
+                      animationOutDelay={250}
+                      animationInDuration={250}
+                      animationOutDuration={250}
+                      isVisible={true}
+                    >
+                      <div id="header-bar">
+                        <NavLink to="/">
+                          <img src={logo} className="app-logo" alt="BD Logo" />
+                        </NavLink>
+                        <div id="header-name">
+                          <h1>Brian Dunn</h1>
+                        </div>
                       </div>
-                    </div>
+                    </Animated>
                   </li>
-                  <div className="nav-bar">
+                  <div className="nav">
                     <li>
                       <NavLink to="/AboutMe">About Me</NavLink>
                     </li>
