@@ -215,7 +215,8 @@ img.about-me-picture {
   height: 250px;
   display: block;
   margin: 0 auto;
-  border-radius: 15px;
+  border-radius: 40px;
+  border: 1px darkblue solid;
 }
 
 @media screen and (max-width: 925px) {
