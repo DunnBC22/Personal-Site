@@ -3,6 +3,7 @@ as well as this website */
 
 import React, { Component } from "react";
 import myPicture from "../LinkedInPic.jpg";
+import { Animated } from "react-animated-css";
 
 class AboutMe extends Component {
   constructor(props) {
@@ -20,7 +21,7 @@ class AboutMe extends Component {
           id: 1,
           header: "This Website",
           para:
-            "I created this site to expand my knowledge of ReactJS and other relevant technologies as well as to have fun! In addition to ReactJS, this site utilizes React Router, Material UI, and JavaScript (ES6)."
+            "I created this site to expand my knowledge of ReactJS and other relevant technologies as well as to have fun! In addition to ReactJS, this site utilizes React Router, Material UI, JavaScript (ES6), jQuery (for AJAX), and React Animated CSS."
         }
       ]
     };
@@ -40,13 +41,19 @@ class AboutMe extends Component {
       <div className="app-body">
         <h1>About Me</h1>
         <br />
-        <a href="http://linkedin.com/in/DunnBC22">
-          <img
-            src={myPicture}
-            alt="LinkedIn Pic of Brian Dunn"
-            className="about-me-picture"
-          />
-        </a>
+        <Animated
+          animationIn="zoomIn"
+          animationInDelay={250}
+          animationInDuration={250}
+        >
+          <a href="http://linkedin.com/in/DunnBC22">
+            <img
+              src={myPicture}
+              alt="LinkedIn Pic of Brian Dunn"
+              className="about-me-picture"
+            />
+          </a>
+        </Animated>
         <br />
         {aboutText}
       </div>

@@ -4,8 +4,10 @@
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.6.1",
+    "animate.css": "^3.7.2",
     "jquery": "^3.4.1",
     "react": "^16.11.0",
+    "react-animated-css": "^1.2.1",
     "react-dom": "^16.11.0",
     "react-number-format": "^4.3.1",
     "react-router-dom": "^5.1.2",
